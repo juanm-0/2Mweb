@@ -11,10 +11,13 @@ const ServicesHome = () => (
     </Grid.Row>
     <Grid.Row>
       <Grid.Column mobile={16} tablet={8} computer={5}>
-        <ImageLink></ImageLink>
+        <ImageLink imageUrl='https://react.semantic-ui.com/images/wireframe/image.png' text='Photography'></ImageLink>
       </Grid.Column>
       <Grid.Column mobile={16} tablet={8} computer={5}>
-        <ImageLink></ImageLink>
+         <ImageLink imageUrl='https://react.semantic-ui.com/images/wireframe/image.png' text='Illustration'></ImageLink>
+      </Grid.Column>
+      <Grid.Column mobile={16} tablet={8} computer={5}>
+         <ImageLink imageUrl='https://react.semantic-ui.com/images/wireframe/image.png' text='Website'></ImageLink>
       </Grid.Column>
     </Grid.Row>
   </Grid>

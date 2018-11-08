@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container, Image, Header } from 'semantic-ui-react'
 
-const ImageLink = () => (
+const ImageLink = props => (
   <Container>
-    <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-    <Header as='h4' textAlign='center' >Photography</Header>
+    <Image src={props.imageUrl}/>
+    <Header as='h4' textAlign='center' >{props.text}</Header>
     </Container>
 )
 
