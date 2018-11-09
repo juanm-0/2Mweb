@@ -30,16 +30,11 @@ export default class Navbar extends Component {
     >
       <Container>
         <LinkedItem position='left center' to='/' exact>Home</LinkedItem>
-        <Dropdown as={ForwardedLink} position='right' to='/page-2' text='Portfolio' simple item>
-          <Dropdown.Menu>
-            <LinkedDropdownItem to='/portfolio-photography'>Photography</LinkedDropdownItem>
-            <LinkedDropdownItem to='/portfolio-photography'>Illustration</LinkedDropdownItem>
-            <LinkedDropdownItem to='/portfolio-photography'>Branding</LinkedDropdownItem>
-          </Dropdown.Menu>
-        </Dropdown>
         <Dropdown as={ForwardedLink} position='right' to='/page-2' text='Services' simple item>
           <Dropdown.Menu>
-            <LinkedDropdownItem to='/404'>Photography</LinkedDropdownItem>
+            <LinkedDropdownItem to='/portfolio-photography'>Photography</LinkedDropdownItem>
+            <LinkedDropdownItem to='/portfolio-illustration'>Illustration</LinkedDropdownItem>
+            <LinkedDropdownItem to='/portfolio-video'>Video</LinkedDropdownItem>
           </Dropdown.Menu>
         </Dropdown>
         <LinkedItem to='/404'>About</LinkedItem>
