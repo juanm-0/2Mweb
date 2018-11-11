@@ -33,10 +33,15 @@ const Layout = ({ children, data }) => (
           fixed={false}
         />
 
-        <Container>
-          {children}
-        </Container>
+        {children}
 
+{/*         <Container>
+          <Grid relaxed stackable>
+            <Grid.Column mobile={16} tablet={8} computer={8}>
+              {children}
+            </Grid.Column>
+          </Grid>
+        </Container> */}
       </>
     )}
   />

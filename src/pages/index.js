@@ -3,11 +3,15 @@ import React from 'react'
 import Layout from '../components/layout'
 import HeroShot from '../components/heroshot'
 import ServicesHome from '../components/services-home'
+import AboutHome from '../components/about-home'
+import SocialHome from '../components/social-home'
 
 const IndexPage = () => (
   <Layout>
     <HeroShot></HeroShot>
     <ServicesHome></ServicesHome>
+    <AboutHome></AboutHome>
+    <SocialHome></SocialHome>
 {/*     <h2>
       <span role="img" aria-label="Waving hand">
         👋

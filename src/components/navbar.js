@@ -37,7 +37,7 @@ export default class Navbar extends Component {
             <LinkedDropdownItem to='/portfolio-video'>Video</LinkedDropdownItem>
           </Dropdown.Menu>
         </Dropdown>
-        <LinkedItem to='/404'>About</LinkedItem>
+        <LinkedItem to='/about'>About</LinkedItem>
         <LinkedItem to='/404'>CONTACT</LinkedItem>
       </Container>
     </Menu>
