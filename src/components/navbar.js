@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Menu, Dropdown, Container } from 'semantic-ui-react'
 
+import ContactModal from './contact-modal'
+
 import { Link } from 'gatsby'
 
 const LinkedItem = ({ children, ...props }) => (
@@ -38,7 +40,7 @@ export default class Navbar extends Component {
           </Dropdown.Menu>
         </Dropdown>
         <LinkedItem to='/about'>About</LinkedItem>
-        <LinkedItem to='/404'>CONTACT</LinkedItem>
+        <ContactModal></ContactModal>
       </Container>
     </Menu>
     )
