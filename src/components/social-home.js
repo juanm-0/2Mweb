@@ -10,13 +10,13 @@ const SocialHome = () => (
       <Divider hidden></Divider>
       <Grid.Row columns={3}>
         <Grid.Column>
-            <Icon name='instagram' size='huge' circular inverted/>
+            <Icon name='instagram' size='huge' circular inverted fitted/>
         </Grid.Column>
         <Grid.Column>
-            <Icon name='facebook' size='huge' circular inverted/>
+            <Icon name='facebook' size='huge' circular inverted fitted/>
         </Grid.Column>
         <Grid.Column>
-            <Icon name='youtube' size='huge' circular inverted/>
+            <Icon name='youtube' size='huge' circular inverted fitted/>
         </Grid.Column>
       </Grid.Row>
     </Grid>
