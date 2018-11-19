@@ -8,7 +8,7 @@ export default class ContactModal extends Component {
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
-  state = { firstName: '', lastName: '', email: '', subject: '', message: '' }
+  state = { modalOpen: false, firstName: '', lastName: '', email: '', subject: '', message: '' }
 
   handleChange(event) {
     const target = event.target
@@ -30,11 +30,19 @@ export default class ContactModal extends Component {
       'message': this.state.message
     },
       'user_6c5VkuY1yPHfiKQfIJ6Dd');
+    this.setState({ modalOpen: false })
   }
+
+  handleOpenModal = () => this.setState({ modalOpen: true })
 
   render() {
     return (
-      <Modal size='small' trigger={<Button basic>CONTACT</Button>} basic closeIcon>
+      <Modal 
+        size='small' 
+        trigger={<Button onClick={this.handleOpenModal} basic>CONTACT</Button>} 
+        basic 
+        closeIcon
+        open={this.state.modalOpen}>
         <Modal.Header>CONTACT</Modal.Header>
         <Modal.Content>
           <Form inverted size='small' key='small'>
