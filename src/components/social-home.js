@@ -1,5 +1,6 @@
 import React from 'react'
 import { Divider, Grid, Container, Header, Icon } from 'semantic-ui-react'
+import IconLink from './icon-link'
 
 const SocialHome = () => (
   <Container>
@@ -10,13 +11,13 @@ const SocialHome = () => (
       <Divider hidden></Divider>
       <Grid.Row columns={3}>
         <Grid.Column>
-            <Icon name='instagram' size='huge' circular inverted fitted/>
+            <IconLink name='instagram' size='huge' href='https://www.instagram.com/2mcreativelabs'></IconLink>
         </Grid.Column>
         <Grid.Column>
-            <Icon name='facebook' size='huge' circular inverted fitted/>
+            <IconLink name='facebook' size='huge' href='https://www.facebook.com/2M-2368651086495781/'></IconLink>
         </Grid.Column>
         <Grid.Column>
-            <Icon name='youtube' size='huge' circular inverted fitted/>
+            <IconLink name='youtube' size='huge' href='https://www.youtube.com/channel/UCY2LfsWNec_7ysZNn46hBUw'></IconLink>
         </Grid.Column>
       </Grid.Row>
     </Grid>
