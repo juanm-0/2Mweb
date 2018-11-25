@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Divider, Form, Modal } from 'semantic-ui-react'
+import { Button, Divider, Form, Menu, Modal } from 'semantic-ui-react'
 
 export default class ContactModal extends Component {
   constructor(props) {
@@ -33,16 +33,20 @@ export default class ContactModal extends Component {
     this.setState({ modalOpen: false })
   }
 
-  handleOpenModal = () => this.setState({ modalOpen: true })
+  handleOpenModal = () => this.setState({ modalOpen: true, closeOnDimmerClick: true })
+
+  close = () => this.setState({ modalOpen: false })
 
   render() {
     return (
       <Modal 
         size='small' 
-        trigger={<Button onClick={this.handleOpenModal} basic>CONTACT</Button>} 
+        trigger={<Menu.Item inverted onClick={this.handleOpenModal} basic>CONTACT</Menu.Item>} 
         basic 
         closeIcon
-        open={this.state.modalOpen}>
+        open={this.state.modalOpen}
+        closeOnDimmerClick={this.state.closeOnDimmerClick}
+        onClose={this.close}>
         <Modal.Header>CONTACT</Modal.Header>
         <Modal.Content>
           <Form inverted size='small' key='small'>
